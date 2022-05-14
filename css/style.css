@@ -4,4 +4,21 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+header img {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  width: 45%;
+}
+header span {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
