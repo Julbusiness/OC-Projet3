@@ -33,7 +33,7 @@ main .localisation span {
   padding: 15px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  box-shadow: inset 0 2px 2px #cfd1d1;
+  box-shadow: inset 0 2px 2px #c2c5c5;
 }
 main .localisation i {
   padding: 15px;
@@ -42,6 +42,37 @@ main .localisation i {
   top: 50%;
   left: 90px;
   transform: translateY(-50%);
+}
+main .info {
+  text-align: center;
+  background: #F6F6F6;
+  padding: 15px;
+}
+main .info h1 {
+  font-size: 25px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+}
+main .info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+main .info button {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin: 20px auto 40px;
+}
+main .info button a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #F1F1F1;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
