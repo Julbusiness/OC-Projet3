@@ -199,4 +199,32 @@ main .info button a {
   text-align: right;
 }
 
+footer {
+  width: 100%;
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 30px;
+}
+footer .footer-logo img {
+  font-family: "Shrikhand", cursive;
+  width: 30%;
+  padding: 0 0 10px 20px;
+  filter: white(100%);
+}
+footer .liens a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #F1F1F1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 20px;
+  margin: 5px auto;
+}
+footer .liens a span i {
+  padding-right: 10px;
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=style.css.map */
