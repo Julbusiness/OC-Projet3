@@ -208,9 +208,8 @@ footer {
 }
 footer .footer-logo img {
   font-family: "Shrikhand", cursive;
-  width: 30%;
+  width: 25%;
   padding: 0 0 10px 20px;
-  filter: white(100%);
 }
 footer .liens a {
   display: flex;
@@ -225,6 +224,9 @@ footer .liens a {
 footer .liens a span i {
   padding-right: 10px;
   font-size: 13px;
+}
+footer .liens a .fa-handshake-angle {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

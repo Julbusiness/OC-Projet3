@@ -8,9 +8,8 @@ footer {
   .footer-logo {
     img {
       font-family: $logo-and-title-font;
-      width: 30%;
+      width: 25%;
       padding: 0 0 10px 20px;
-      filter: white(100%);
     }
   }
 
@@ -29,6 +28,11 @@ footer {
         padding-right: 10px;
         font-size: 13px;
       }
+
+      .fa-handshake-angle{
+        font-size: 10px;
+      }
+
     }
   }
 }
