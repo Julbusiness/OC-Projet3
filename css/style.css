@@ -1,4 +1,4 @@
-body {
+body, html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -60,7 +60,7 @@ main .info h1 {
 }
 main .info p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
 }
 main .info button {
@@ -131,6 +131,72 @@ main .info button a {
   padding: 15px 20px;
   color: #6c757d;
   font-size: 18px;
+}
+
+.restaurants {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+}
+.restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.restaurants .card {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto 20px;
+}
+.restaurants .card .image {
+  position: relative;
+}
+.restaurants .card .image img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  object-position: right bottom;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants .card .image p {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: #99E2D0;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #278870;
+}
+.restaurants .card .info-texte {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.restaurants .card .info-texte .texte {
+  flex-direction: column;
+  width: 80%;
+  height: 60px;
+}
+.restaurants .card .info-texte .texte h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.restaurants .card .info-texte .texte p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-top: 3px;
+}
+.restaurants .card .info-texte .coeur {
+  width: 20%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

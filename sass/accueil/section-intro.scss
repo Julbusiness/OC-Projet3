@@ -37,9 +37,7 @@ main {
 			font-family: $text-font;
 		}
 		p {
-			font-family: $text-font;
-			font-size: 18px;
-			font-weight: 300;
+      @include p-size;
 		}
 		button {
 			border: none;

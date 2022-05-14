@@ -2,3 +2,14 @@
   font-family: $text-font;
   font-size: $h2-size;
 }
+
+@mixin h3-size {
+  font-family: $text-font;
+  font-size: $h3-size;
+}
+
+@mixin p-size {
+  font-family: $text-font;
+  font-size: $p-size;
+  font-weight: 300;
+}
