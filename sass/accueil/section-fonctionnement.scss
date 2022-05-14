@@ -1,0 +1,56 @@
+	.fonctionnement {
+    padding: 20px;
+
+    h2 {
+      @include h2-size
+    }
+
+		div {
+			background: $main-bg;
+			padding: 15px;
+			margin: 25px auto;
+			border-radius: 25px;
+			box-shadow: 3px 5px 7px darken($main-bg, 5);
+
+      &:hover {
+        background: lighten($primary-color, 35);
+        .text i {
+          color: $primary-color;
+        }
+      }
+      
+      a {
+        position: relative;
+        text-decoration: none;
+        color: $primary-text-color;
+  
+        .number {
+          position: absolute;
+          top: 50%;
+          left: -25px;
+          transform: translateY(-50%);
+          background: $primary-color;
+          padding: 5px;
+          border-radius: 100%;
+          width: 15px;
+          height: 15px;
+          font-family: $text-font;
+          font-size: 15px;
+          color: $secondary-text-color;
+          text-align: center;
+        }
+  
+        .text {
+          display: block;
+          font-family: $text-font;
+          font-size: 17px;
+          font-weight: 500;
+          i {
+            padding: 15px 20px;
+            color: $icon-color;
+            font-size: 18px;
+          }
+        }
+      }
+		}
+	}

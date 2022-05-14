@@ -5,6 +5,9 @@ body {
 }
 
 @import "./base/variables";
+@import "./base/mixins";
 @import "./accueil/header";
-@import "./accueil/main";
+@import "./accueil/section-intro";
+@import "./accueil/section-fonctionnement";
+@import "./accueil/section-restaurants";
 @import "./accueil/footer";
