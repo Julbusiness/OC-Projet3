@@ -1,15 +1,15 @@
-@mixin h2-size {
-  font-family: $text-font;
-  font-size: $h2-size;
+@mixin h2-style {
+	font-family: $text-font;
+	font-size: $h2-font-size;
 }
 
-@mixin h3-size {
-  font-family: $text-font;
-  font-size: $h3-size;
+@mixin h3-style {
+	font-family: $text-font;
+	font-size: $h3-font-size;
 }
 
-@mixin p-size {
-  font-family: $text-font;
-  font-size: $p-size;
-  font-weight: 300;
+@mixin p-style {
+	font-family: $text-font;
+	font-size: $p-font-size;
+	font-weight: 300;
 }

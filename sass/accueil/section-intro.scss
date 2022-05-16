@@ -37,7 +37,7 @@ main {
 			font-family: $text-font;
 		}
 		p {
-      @include p-size;
+      @include p-style;
 		}
 		button {
 			border: none;
