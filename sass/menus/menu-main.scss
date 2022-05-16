@@ -1,0 +1,29 @@
+.container {
+  background: $main-bg;
+  border-radius: 25px 25px 0 0;
+  // background: red;
+}
+
+.image-menu-cover {
+  img {
+    width: 100%;
+  }
+}
+  
+.titre-menu-texte {
+  display: flex;
+
+  .menu-titre {
+    width: 80%;
+    h2 {
+      font-family: $logo-and-title-font;
+      font-size: $menu-h2-font-size;
+      margin: 0;
+    }
+  }
+
+  .menu-coeur {
+    width: 20%;
+    text-align: right;
+  }
+}

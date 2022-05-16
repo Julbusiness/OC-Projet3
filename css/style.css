@@ -14,13 +14,6 @@ header img {
   padding: 15px;
   width: 45%;
 }
-header span {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  display: none;
-}
 
 main .localisation {
   display: flex;
@@ -154,6 +147,10 @@ main .info button a {
 .restaurants .card:nth-child(3) .image img {
   object-position: center 62%;
 }
+.restaurants .card a {
+  text-decoration: none;
+  color: #333;
+}
 .restaurants .card .image {
   position: relative;
 }
@@ -230,6 +227,38 @@ footer .liens a span i {
 }
 footer .liens a .fa-handshake-angle {
   font-size: 10px;
+}
+
+header span {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.container {
+  background: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+}
+
+.image-menu-cover img {
+  width: 100%;
+}
+
+.titre-menu-texte {
+  display: flex;
+}
+.titre-menu-texte .menu-titre {
+  width: 80%;
+}
+.titre-menu-texte .menu-titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  margin: 0;
+}
+.titre-menu-texte .menu-coeur {
+  width: 20%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
