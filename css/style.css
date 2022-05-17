@@ -206,6 +206,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px 0 30px;
+  margin-top: 50px;
 }
 footer .footer-logo img {
   font-family: "Shrikhand", cursive;
