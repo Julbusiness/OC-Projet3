@@ -41,6 +41,7 @@ main {
 		}
 		button {
 			@include button-style;
+			margin: 20px auto 40px;
 		}
 	}
 }
