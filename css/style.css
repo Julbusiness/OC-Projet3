@@ -236,14 +236,22 @@ header span {
   transform: translateY(-50%);
 }
 
-.container {
-  background: #f6f6f6;
-  border-radius: 25px 25px 0 0;
-  padding: 25px 15px;
+main {
+  position: relative;
 }
 
 .image-menu-cover img {
   width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  padding: 25px 0px;
 }
 
 .titre-menu-texte {
@@ -254,14 +262,19 @@ header span {
 }
 .titre-menu-texte .menu-titre h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 28px;
-  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 15px 15px 0;
 }
 .titre-menu-texte .menu-coeur {
   width: 15%;
   text-align: center;
+  padding-top: 15px;
 }
 
+.menu {
+  margin: 15px;
+}
 .menu h3 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -269,6 +282,7 @@ header span {
   font-weight: 300;
   border-bottom: 3px solid #99e2d0;
   width: 11%;
+  margin-block-start: 2em;
 }
 .menu .choix {
   background: #fff;
@@ -284,6 +298,7 @@ header span {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 5px;
 }
 .menu .choix .details-prix h4 {
   font-family: "Roboto", sans-serif;
@@ -306,7 +321,7 @@ header span {
 .menu .choix .details-prix .text-details .prix {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   padding: 0 20px 10px 0;
 }
@@ -346,8 +361,29 @@ header span {
   position: absolute;
   opacity: 0;
 }
-.menu .choix .form-check #check:checked + label > span i {
+.menu .choix .form-check .check:checked + label > span i {
   opacity: 1;
+}
+.menu button {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  box-shadow: 3px 5px 5px #d0d0d0;
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin: 20px auto 40px;
+  padding: 15px 50px;
+  display: block;
+  justify-content: center;
+  margin-top: 50px;
+}
+.menu button a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,3 +13,21 @@
 	font-size: $p-font-size;
 	font-weight: 300;
 }
+
+@mixin button-style {
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	background: linear-gradient(to right bottom, $secondary-color, $primary-color);
+	box-shadow: 3px 5px 5px darken($main-bg, 15);
+	padding: 15px 20px;
+	border-radius: 50px;
+	margin: 20px auto 40px;
+	a {
+		text-decoration: none;
+		font-family: $text-font;
+		color: $secondary-text-color;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
