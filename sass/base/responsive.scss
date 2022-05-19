@@ -37,21 +37,21 @@
     font-size: 22px;
     header {
       img {
-        max-width: 35%;
+        max-width: rem-calc(200);
       }
     }
     footer {
       img {
-        max-width: 20%;
+        max-width: rem-calc(150);
       }
     }
       .restaurants {
         .card {
-          height: rem-calc(310);
+          max-height: rem-calc(310);
         }
         .card .image {
           img {
-            height: rem-calc(250);
+            max-height: rem-calc(250);
           }
         }
       }
@@ -64,23 +64,100 @@
     font-size: 22px;
     header {
       img {
-        max-width: 30%;
+        max-width: rem-calc(250);
       }
     }
     footer {
-      img {
-        max-width: 15%;
+      flex-direction: row;
+      align-items: center;
+      height: 50px;
+      justify-content: space-between;
+      .footer-logo {
+        img {
+          display: flex;
+          width: 100%;
+          max-width: rem-calc(120);
+          align-items: center;
+          padding: 0 0px 0 50px;
+        }
+      }
+      .liens {
+        display: flex;
+        padding-right: 50px;
+        a {
+          font-size: rem-calc(14);
+        }
       }
     }
-      .restaurants {
-        .card {
-          height: rem-calc(310);
+
+    .fonctionnement {
+      .flex-media {
+        display: flex;
+        div {
+          width: 250px;
+          height: 100px;
+          align-items: center;
+          justify-content: center;
+          padding: rem-calc(10);
+          margin: rem-calc(20) auto;
         }
-        .card .image {
-          img {
-            height: rem-calc(250);
-          }
+        div a .number {
+          top: -30%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: rem-calc(20);
+          height: rem-calc(20);
+          font-size: rem-calc(18);
+          font-weight: $font-weight-thin-large;
+        }
+        div a .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
         }
       }
+    }
+
+    .restaurants {
+      .flex-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  main {
+    .container{
+      .menu-coeur {
+        text-align: right;
+        padding-right: 50px;
+      }
+    }
+  }
+} 
+
+// media queries Grand ecran
+@media screen and (min-width: 1200px){
+  html, body {
+    .fonctionnement {
+      .flex-media {
+        display: flex;
+        .choix {
+          padding: 0 auto 20px;
+        }
+        div {
+          width: 320px;
+          height: 160px;
+        }
+        div a .number {
+          top: -20%;
+        }
+      }
+    }
   }
 } 

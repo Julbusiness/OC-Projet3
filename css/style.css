@@ -33,16 +33,16 @@ body, html {
     font-size: 22px;
   }
   html header img, body header img {
-    max-width: 35%;
+    max-width: 12.5rem;
   }
   html footer img, body footer img {
-    max-width: 20%;
+    max-width: 9.375rem;
   }
   html .restaurants .card, body .restaurants .card {
-    height: 19.375rem;
+    max-height: 19.375rem;
   }
   html .restaurants .card .image img, body .restaurants .card .image img {
-    height: 15.625rem;
+    max-height: 15.625rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -50,16 +50,81 @@ body, html {
     font-size: 22px;
   }
   html header img, body header img {
-    max-width: 30%;
+    max-width: 15.625rem;
   }
-  html footer img, body footer img {
-    max-width: 15%;
+  html footer, body footer {
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
   }
-  html .restaurants .card, body .restaurants .card {
-    height: 19.375rem;
+  html footer .footer-logo img, body footer .footer-logo img {
+    display: flex;
+    width: 100%;
+    max-width: 7.5rem;
+    align-items: center;
+    padding: 0 0px 0 50px;
   }
-  html .restaurants .card .image img, body .restaurants .card .image img {
-    height: 15.625rem;
+  html footer .liens, body footer .liens {
+    display: flex;
+    padding-right: 50px;
+  }
+  html footer .liens a, body footer .liens a {
+    font-size: 0.875rem;
+  }
+  html .fonctionnement .flex-media, body .fonctionnement .flex-media {
+    display: flex;
+  }
+  html .fonctionnement .flex-media div, body .fonctionnement .flex-media div {
+    width: 250px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    margin: 1.25rem auto;
+  }
+  html .fonctionnement .flex-media div a .number, body .fonctionnement .flex-media div a .number {
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  html .fonctionnement .flex-media div a .text, body .fonctionnement .flex-media div a .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  html .restaurants .flex-card, body .restaurants .flex-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html .restaurants .flex-card .card, body .restaurants .flex-card .card {
+    width: 45%;
+  }
+
+  main .container .menu-coeur {
+    text-align: right;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html .fonctionnement .flex-media, body .fonctionnement .flex-media {
+    display: flex;
+  }
+  html .fonctionnement .flex-media .choix, body .fonctionnement .flex-media .choix {
+    padding: 0 auto 20px;
+  }
+  html .fonctionnement .flex-media div, body .fonctionnement .flex-media div {
+    width: 320px;
+    height: 160px;
+  }
+  html .fonctionnement .flex-media div a .number, body .fonctionnement .flex-media div a .number {
+    top: -20%;
   }
 }
 header {
@@ -143,25 +208,28 @@ main .info button a {
   font-size: 1.375rem;
   font-weight: 500;
 }
-.fonctionnement div {
+.fonctionnement .flex-media {
+  background: transparent;
+}
+.fonctionnement .flex-media div {
   background: #f6f6f6;
   padding: 10px;
   margin: 20px auto;
   border-radius: 25px;
   box-shadow: 3px 5px 7px #e9e9e9;
 }
-.fonctionnement div:hover {
+.fonctionnement .flex-media div:hover {
   background: #f2eafb;
 }
-.fonctionnement div:hover .text i {
+.fonctionnement .flex-media div:hover .text i {
   color: #9356dc;
 }
-.fonctionnement div a {
+.fonctionnement .flex-media div a {
   position: relative;
   text-decoration: none;
   color: #333;
 }
-.fonctionnement div a .number {
+.fonctionnement .flex-media div a .number {
   position: absolute;
   top: 50%;
   left: -20px;
@@ -176,13 +244,13 @@ main .info button a {
   color: #f1f1f1;
   text-align: center;
 }
-.fonctionnement div a .text {
+.fonctionnement .flex-media div a .text {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 0.9375rem;
   font-weight: 500;
 }
-.fonctionnement div a .text i {
+.fonctionnement .flex-media div a .text i {
   padding: 15px 20px;
   color: #6c757d;
   font-size: 1.125rem;
