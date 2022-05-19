@@ -1,6 +1,13 @@
+@mixin h1-style {
+	font-family: $text-font;
+	font-size: $h1-font-size;
+	font-weight: $font-weight-normal;
+}
+
 @mixin h2-style {
 	font-family: $text-font;
 	font-size: $h2-font-size;
+	font-weight: $font-weight-normal;
 }
 
 @mixin h3-style {
@@ -11,22 +18,22 @@
 @mixin p-style {
 	font-family: $text-font;
 	font-size: $p-font-size;
-	font-weight: 300;
+	font-weight: $font-weight-thin-medium;
 }
 
 @mixin button-style {
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
-	background: linear-gradient(to right bottom, $secondary-color, $primary-color);
+	background: $button-color;
 	box-shadow: 3px 5px 5px darken($main-bg, 15);
-	padding: 15px 20px;
+	padding: 12px 16px;
 	border-radius: 50px;
 	a {
 		text-decoration: none;
 		font-family: $text-font;
 		color: $secondary-text-color;
-		font-size: 16px;
-		font-weight: 500;
+		font-size: $button-font-size;
+		font-weight: $font-weight-thin-large;
 	}
 }

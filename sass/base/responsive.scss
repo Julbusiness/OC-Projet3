@@ -1,0 +1,86 @@
+// Media queries Mobile
+  @media screen and (min-width: 400px){
+    html, body {
+      font-size: 18px;
+        .restaurants {
+          .card {
+            height: rem-calc(250);
+          }
+          .card .image {
+            img {
+              height: rem-calc(180);
+            }
+          }
+        }
+    }
+  } 
+  
+  @media screen and (min-width: 500px) {
+    html, body {
+      font-size: 20px;
+        .restaurants {
+          .card {
+            height: rem-calc(310);
+          }
+          .card .image {
+            img {
+              height: rem-calc(250);
+            }
+          }
+        }
+    }
+}
+
+// Media queries Tablette
+@media screen and (min-width: 768px){
+  html, body {
+    font-size: 22px;
+    header {
+      img {
+        max-width: 35%;
+      }
+    }
+    footer {
+      img {
+        max-width: 20%;
+      }
+    }
+      .restaurants {
+        .card {
+          height: rem-calc(310);
+        }
+        .card .image {
+          img {
+            height: rem-calc(250);
+          }
+        }
+      }
+  }
+} 
+
+// Media queries Desktop
+@media screen and (min-width: 1024px){
+  html, body {
+    font-size: 22px;
+    header {
+      img {
+        max-width: 30%;
+      }
+    }
+    footer {
+      img {
+        max-width: 15%;
+      }
+    }
+      .restaurants {
+        .card {
+          height: rem-calc(310);
+        }
+        .card .image {
+          img {
+            height: rem-calc(250);
+          }
+        }
+      }
+  }
+} 

@@ -20,13 +20,27 @@ $secondary-text-color: #f1f1f1;
 // icons Colors
 $icon-color: #6c757d;
 
-// Font size
-$h2-font-size: 25px;
-$h3-font-size: 18px;
-$p-font-size: 17px;
-$footer-font-size: 16px;
-$menu-h2-font-size: 26px;
-$menu-h3-font-size: 16px;
-$menu-h4-font-size: 17px;
-$menu-details-size: 14px;
+// button color
+$button-color: linear-gradient(to right bottom, $secondary-color, $primary-color);
 
+// Font size
+$h1-font-size: rem-calc(21);
+$h2-font-size: rem-calc(22);
+$h3-font-size: rem-calc(16);
+$p-font-size: rem-calc(15);
+$button-font-size: rem-calc(14);
+$footer-font-size: rem-calc(16);
+$menu-h2-font-size: rem-calc(26);
+$menu-h3-font-size: rem-calc(16);
+$menu-h4-font-size: rem-calc(17);
+$menu-details-size: rem-calc(14);
+
+
+// Font-weight
+$font-weight-thin-small: 200;
+$font-weight-thin-medium: 300;
+$font-weight-thin-large: 400;
+$font-weight-normal: 500;
+
+// width
+$full-width: 100%;

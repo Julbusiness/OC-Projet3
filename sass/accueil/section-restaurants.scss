@@ -1,5 +1,5 @@
 .restaurants {
-	padding: 20px;
+	padding: 20px 20px 30px;
 	display: flex;
 	flex-direction: column;
 	background: $main-bg;
@@ -12,8 +12,8 @@
 	.card {
 		background: $card-bg;
 		border-radius: 20px;
-		width: 100%;
-		height: 250px;
+		width: $full-width;
+		height: 230px;
 		margin: 0 auto 20px;
 		&:nth-child(3) .image img {
 			object-position: center 62%;
@@ -28,8 +28,8 @@
 			position: relative;
 
 			img {
-				width: 100%;
-				height: 175px;
+				width: $full-width;
+				height: 160px;
 				object-fit: cover;
         object-position: right bottom;
 				border-radius: 20px 20px 0 0;
@@ -40,10 +40,10 @@
 				top: 0px;
 				right: 10px;
 				background: $tertiary-color;
-				padding: 5px 10px;
+				padding: 5px 8px;
 				font-family: $text-font;
-				font-size: 15px;
-				font-weight: 500;
+				font-size: rem-calc(13);
+				font-weight: $font-weight-thin-large;
 				color: darken($tertiary-color, 40);
 			}
     }
@@ -56,7 +56,7 @@
       .texte {
         flex-direction: column;
         width: 80%;
-        height: 60px;
+        height: rem-calc(40);
 
         h3 {
           @include h3-style;
@@ -71,7 +71,7 @@
 			}
 
       .coeur {
-        width: 20%;
+        width: 25%;
         text-align: right;
       }
 		}

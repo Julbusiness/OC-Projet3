@@ -3,10 +3,14 @@ body, html {
 	margin: 0;
 	box-sizing: border-box;
 	height: 100vh;
+	font-size: 16px;
 }
 
+
+@import "./base/functions";
 @import "./base/variables";
 @import "./base/mixins";
+@import "./base/responsive";
 @import "./accueil/header";
 @import "./accueil/section-intro";
 @import "./accueil/section-fonctionnement";
