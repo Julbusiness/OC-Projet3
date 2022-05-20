@@ -50,8 +50,8 @@
 
     .info-texte {
       display: flex;
-      justify-content: space-between;
       padding: 10px 15px;
+			position: relative;
 
       .texte {
         flex-direction: column;
@@ -70,10 +70,9 @@
         }
 			}
 
-      .coeur {
-        width: 25%;
-        text-align: right;
-      }
+			@include heart-toggle;
+		
+
 		}
 	}
 }

@@ -42,3 +42,41 @@
 	opacity: 0.8;
 	box-shadow: 3px 5px 5px darken($main-bg, 30);
 }
+
+@mixin heart-style {
+	i {
+		font-size: rem-calc(20);
+		position: absolute;
+		top: 50%;
+		right: 3.5%;
+		transform: translateY(-60%);
+		cursor: pointer;
+	}
+	.fa-solid {
+		color: transparent;
+		background-image: $button-color;
+		background-clip: text;
+		-webkit-background-clip: text;
+		opacity: 0;
+		// &:hover {
+		// 	opacity: 1;
+		// 	transition: all 400ms ease-in-out;
+		// }
+	}
+}
+
+@mixin heart-toggle {
+	.heart-toggle {
+		@include heart-style;
+	}
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"]:checked + .heart-toggle {
+		@include heart-style;
+		.fa-solid {
+			opacity: 1;
+		}
+	}
+}

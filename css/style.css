@@ -310,8 +310,8 @@ main .info button:hover {
 }
 .restaurants .card .info-texte {
   display: flex;
-  justify-content: space-between;
   padding: 10px 15px;
+  position: relative;
 }
 .restaurants .card .info-texte .texte {
   flex-direction: column;
@@ -330,9 +330,41 @@ main .info button:hover {
   margin: 0 auto;
   padding-top: 3px;
 }
-.restaurants .card .info-texte .coeur {
-  width: 25%;
-  text-align: right;
+.restaurants .card .info-texte .heart-toggle i {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+.restaurants .card .info-texte .heart-toggle .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.restaurants .card .info-texte input[type=checkbox] {
+  display: none;
+}
+.restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle i {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+.restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle .fa-solid {
+  opacity: 1;
 }
 
 footer {
@@ -391,22 +423,51 @@ main {
   top: -50px;
 }
 
-.titre-menu-texte {
-  display: flex;
+.menu-titre {
+  width: 100%;
+  position: relative;
 }
-.titre-menu-texte .menu-titre {
-  width: 85%;
-}
-.titre-menu-texte .menu-titre h2 {
+.menu-titre h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.625rem;
   font-weight: 400;
   margin: 15px 15px 0;
 }
-.titre-menu-texte .menu-coeur {
-  width: 15%;
-  text-align: center;
-  padding-top: 15px;
+.menu-titre .heart-toggle i {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+.menu-titre .heart-toggle .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.menu-titre input[type=checkbox] {
+  display: none;
+}
+.menu-titre input[type=checkbox]:checked + .heart-toggle i {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+.menu-titre input[type=checkbox]:checked + .heart-toggle .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.menu-titre input[type=checkbox]:checked + .heart-toggle .fa-solid {
+  opacity: 1;
 }
 
 .menu {

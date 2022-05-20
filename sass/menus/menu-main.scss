@@ -16,25 +16,17 @@ main {
   position: relative;
   top: -50px;
 }
-  
-.titre-menu-texte {
-  display: flex;
 
-  .menu-titre {
-    width: 85%;
-    h2 {
-      font-family: $logo-and-title-font;
-      font-size: $menu-h2-font-size;
-      font-weight: 400;
-      margin: 15px 15px 0;
-    }
+.menu-titre {
+  width: 100%;
+  position: relative;
+  h2 {
+    font-family: $logo-and-title-font;
+    font-size: $menu-h2-font-size;
+    font-weight: 400;
+    margin: 15px 15px 0;
   }
-
-  .menu-coeur {
-    width: 15%;
-    text-align: center;
-    padding-top: 15px;
-  }
+  @include heart-toggle;
 }
 
 .menu {
