@@ -37,3 +37,8 @@
 		font-weight: $font-weight-thin-large;
 	}
 }
+
+@mixin button-style-hover {
+	opacity: 0.8;
+	box-shadow: 3px 5px 5px darken($main-bg, 30);
+}

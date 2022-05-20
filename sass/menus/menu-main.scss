@@ -148,5 +148,8 @@ main {
     display: block;
     justify-content: center;
     margin: 50px auto 0px;
+    &:hover {
+      @include button-style-hover;
+    }
   }
 }
