@@ -105,6 +105,7 @@ body, html {
   }
   html .restaurants .flex-card .card, body .restaurants .flex-card .card {
     width: 45%;
+    margin-bottom: 50px;
   }
 
   main .container .menu-coeur {
