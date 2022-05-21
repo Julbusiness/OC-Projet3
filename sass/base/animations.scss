@@ -1,0 +1,34 @@
+
+// Animation bouton (couleur plus clair au hover)
+
+  .info {
+		button {
+			&:hover {
+				@include button-style-hover;
+			}
+		}
+  }
+
+  .menu {
+    button {
+      &:hover {
+        @include button-style-hover;
+      }
+    }
+  }
+
+
+// Animation click coeur-favoris (couleur plus clair au hover)
+
+.restaurants {
+  .card {
+    .info-texte {
+			@include heart-toggle;
+    }
+  }
+}
+
+// Animation au chargement des menus (block ou card apparaissent en décalé dans le temps)
+
+// Animation pages de menu (Ajouter des plats au click et utiliser les 3 petits points)
+
