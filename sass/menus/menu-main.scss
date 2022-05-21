@@ -39,7 +39,7 @@ main {
     font-weight: 300;
     border-bottom: 3px solid $tertiary-color;
     width: rem-calc(40);
-    margin-block-start: 2em;
+    margin-block-start: rem-calc(40);
   }
 
   .choix {
@@ -53,7 +53,7 @@ main {
       position: relative;
       display: flex;
       width: $full-width;
-      height: rem-calc(60);
+      height: rem-calc(65);
       cursor: pointer;
       overflow: hidden;
       &:hover {
@@ -109,7 +109,7 @@ main {
           font-family: $text-font;
           font-size: $menu-details-size;
           font-weight: $font-weight-normal;
-          padding: 10px 0px;
+          padding: 10px;
         }
       }
       
@@ -118,7 +118,7 @@ main {
         top: 0;
         right: -55px;
         width: 55px;
-        height: rem-calc(60);
+        height: rem-calc(65);
         border-radius: 0 15px 15px 0;
 
         
@@ -126,7 +126,7 @@ main {
           display: block;
           border-radius: 0 15px 15px 0;
           width: 60px;
-          height: rem-calc(60);
+          height: rem-calc(65);
           background: $tertiary-color;
           
           i {
