@@ -458,6 +458,9 @@ main {
   cursor: pointer;
   overflow: hidden;
 }
+.menu .choix .details-prix:hover .text-menu {
+  width: 65%;
+}
 .menu .choix .details-prix:hover .tarifs p {
   transform: translateX(-60px);
   transition: transform 500ms ease-in-out;
@@ -475,19 +478,25 @@ main {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  width: 60%;
+  width: 76%;
 }
 .menu .choix .details-prix .text-menu h4 {
   font-size: 1.0625rem;
   font-weight: 500;
   margin: auto 0;
   padding: 0.625rem 0.625rem 0.3125rem 0.625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .choix .details-prix .text-menu p {
   font-size: 0.875rem;
   font-weight: 300;
   margin: auto 0;
   padding: 0 0.625rem 0.625rem 0.625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .choix .details-prix .tarifs {
   width: 40%;

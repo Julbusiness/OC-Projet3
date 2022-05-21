@@ -48,9 +48,6 @@ main {
     border-radius: 15px;
     box-shadow: 3px 5px 7px darken($main-bg, 5);
     display: flex;
-    // &:hover .form-check {
-    //   display: block;
-    // }
 
     .details-prix {
       position: relative;
@@ -60,6 +57,9 @@ main {
       cursor: pointer;
       overflow: hidden;
       &:hover {
+        .text-menu {
+          width: 65%;
+        }
         .tarifs p {
           transform: translateX(-60px);
           transition: transform 500ms ease-in-out;
@@ -80,21 +80,20 @@ main {
         display: flex;
         flex-direction: column;
         font-family: $text-font;
-        width: 60%;
+        width: 76%;
         h4 {
           font-size: $menu-h4-font-size;
           font-weight: $font-weight-normal;
           margin: auto 0;
           padding: rem-calc(10) rem-calc(10) rem-calc(5) rem-calc(10);
-          // white-space: nowrap;
-          // overflow: hidden;
-          // text-overflow: ellipsis; // ellipse 3 points
+          @include ellipse;
         }
         p {
           font-size: $menu-details-size;
           font-weight: $font-weight-thin-medium;
           margin: auto 0;
           padding: 0 rem-calc(10) rem-calc(10) rem-calc(10);
+          @include ellipse;
         }
       }
       
