@@ -87,3 +87,63 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+@mixin hover-check {
+	&:hover {
+		.text-menu {
+			width: 65%;
+		}
+		.tarifs p {
+			transform: translateX(rem-calc(-60));
+			transition: transform 500ms ease-in-out;
+		}
+		.form-check {
+			width: rem-calc(55);
+			transform: translateX(rem-calc(-60));
+			transition: transform 500ms ease-in-out;
+		}
+
+		i {
+			transform: rotate(360deg);
+			transition: transform 600ms ease-in-out;
+		}
+	}
+}
+
+@mixin hover-check-400 {
+	&:hover {
+		.tarifs p {
+			transform: translateX(rem-calc(-60));
+			transition: transform 500ms ease-in-out;
+		}
+		.form-check {
+			top: 0;
+			right: rem-calc(-60);
+			width: rem-calc(70);
+			transform: translateX(rem-calc(-60));
+			transition: transform 500ms ease-in-out;
+		}
+		.check-label {
+			width: rem-calc(70);
+		}
+	}
+}
+
+@mixin slideOpacity-keyframes{
+	@keyframes slideOpacity {
+    0%{
+      opacity: 0;
+    }
+		50%{
+			opacity: 0.5;
+		}
+    100%{
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slideOpacity-animation($value1, $value2) {
+    animation: slideOpacity $value1 ease-in-out $value2;
+    animation-fill-mode: forwards;
+}

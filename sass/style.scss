@@ -10,7 +10,6 @@ body, html {
 @import "./base/functions";
 @import "./base/variables";
 @import "./base/mixins";
-@import "./base/responsive";
 @import "./accueil/header";
 @import "./accueil/section-intro";
 @import "./accueil/section-fonctionnement";
@@ -19,5 +18,6 @@ body, html {
 @import "./menus/menu-header";
 @import "./menus/menu-main";
 @import "./menus/menu-footer";
+@import "./base/responsive";
 @import "./base/animations";
 
