@@ -324,15 +324,6 @@ main {
   width: 2.5rem;
   margin-block-start: 2.5rem;
 }
-.menu .entrees {
-  opacity: 0;
-}
-.menu .plats {
-  opacity: 0;
-}
-.menu .desserts {
-  opacity: 0;
-}
 .menu .choix {
   background: #fff;
   margin: 15px auto;
@@ -627,18 +618,18 @@ footer {
   transition: all 400ms ease-in-out;
 }
 
-.menu {
-  transition: animation 4s linear;
-}
 .menu .entrees {
+  opacity: 0;
   animation: slideOpacity 700ms ease-in-out 200ms;
   animation-fill-mode: forwards;
 }
 .menu .plats {
+  opacity: 0;
   animation: slideOpacity 700ms ease-in-out 400ms;
   animation-fill-mode: forwards;
 }
 .menu .desserts {
+  opacity: 0;
   animation: slideOpacity 700ms ease-in-out 600ms;
   animation-fill-mode: forwards;
 }

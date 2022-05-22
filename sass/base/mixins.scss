@@ -144,6 +144,7 @@
 }
 
 @mixin slideOpacity-animation($value1, $value2) {
+		opacity: 0;
     animation: slideOpacity $value1 ease-in-out $value2;
     animation-fill-mode: forwards;
 }

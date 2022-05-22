@@ -1,29 +1,29 @@
-// fonts
+//? fonts
 $logo-and-title-font: "Shrikhand", cursive;
 $text-font: "Roboto", sans-serif;
 
-// Main colors
+//? Main colors
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 
-// background colors
+//? background colors
 $local-bg: #e9eaea;
 $main-bg: #f6f6f6;
 $card-bg: #fff;
 $footer-bg: #353535;
 
-// text colors
+//? text colors
 $primary-text-color: #333;
 $secondary-text-color: #f1f1f1;
 
-// icons Colors
+//? icons Colors
 $icon-color: #6c757d;
 
-// button color
+//? button color
 $button-color: linear-gradient(to right bottom, $secondary-color, $primary-color);
 
-// Font size
+//? Font size
 $h1-font-size: rem-calc(21);
 $h2-font-size: rem-calc(22);
 $h3-font-size: rem-calc(16);
@@ -36,11 +36,11 @@ $menu-h4-font-size: rem-calc(17);
 $menu-details-size: rem-calc(14);
 
 
-// Font-weight
+//? Font-weight
 $font-weight-thin-small: 200;
 $font-weight-thin-medium: 300;
 $font-weight-thin-large: 400;
 $font-weight-normal: 500;
 
-// width
+//? width
 $full-width: 100%;

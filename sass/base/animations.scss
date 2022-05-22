@@ -1,4 +1,4 @@
-// Animation bouton (couleur plus clair au hover)
+//? Animation bouton (couleur plus clair au hover)
 
 .info {
 	button {
@@ -16,7 +16,7 @@
 	}
 }
 
-// Animation click coeur-favoris (couleur plus clair au hover)
+//? Animation click coeur-favoris (couleur plus clair au hover)
 
 .restaurants {
 	.card {
@@ -26,10 +26,9 @@
 	}
 }
 
-// Animation au chargement des menus (block ou card apparaissent en décalé dans le temps)
+//? Animation au chargement des menus (Propositions 1)
 
 .menu {
-  transition: animation 4s linear;
 	.entrees {
 		@include slideOpacity-animation(700ms, 200ms);
 	}
@@ -42,7 +41,102 @@
   @include slideOpacity-keyframes;
 }
 
-// Animation pages de menu (Ajouter des plats au click et utiliser les 3 petits points)
+//? Animation au chargement des menus (Propositions 2)
+
+// .menu {
+//   opacity: 1;
+// 	.entrees {
+// 		.choix1 {
+//       @include slideOpacity-animation(700ms, 200ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 600ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 1000ms);
+//     }
+// 	}
+
+//   .plats {
+//     .choix1 {
+//       @include slideOpacity-animation(700ms, 200ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 600ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 1000ms);
+//     }
+//   }
+
+//   .desserts {
+//     .choix1 {
+//       @include slideOpacity-animation(700ms, 200ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 600ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 1000ms);
+//     }
+//   }
+//   @include slideOpacity-keyframes;
+// }
+
+//? Animation au chargement des menus (Propositions 3)
+
+// .menu {
+// 	.entrees {
+//     h3 {
+//       @include slideOpacity-animation(700ms, 200ms);
+//     }
+// 		.choix1 {
+//       @include slideOpacity-animation(700ms, 600ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 800ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 1000ms);
+//     }
+//     .choix4 {
+//       @include slideOpacity-animation(700ms,1200ms);
+//     }
+// 	}
+
+//   .plats {
+//     h3{
+//       @include slideOpacity-animation(700ms, 1500ms);
+//     }
+//     .choix1 {
+//       @include slideOpacity-animation(700ms, 2000ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 2200ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 2400ms);
+//     }
+//   }
+
+//   .desserts {
+//     h3 {
+//       @include slideOpacity-animation(700ms, 2900ms);
+//     }
+//     .choix1 {
+//       @include slideOpacity-animation(700ms, 3400ms);
+//     }
+//     .choix2 {
+//       @include slideOpacity-animation(700ms, 3600ms);
+//     }
+//     .choix3 {
+//       @include slideOpacity-animation(700ms, 3800ms);
+//     }
+//   }
+//   @include slideOpacity-keyframes;
+// }
+
+//? Animation pages de menu (Ajouter des plats au click et utiliser les 3 petits points)
 
 .menu {
 	.choix {

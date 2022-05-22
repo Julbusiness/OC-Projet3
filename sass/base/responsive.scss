@@ -1,4 +1,4 @@
-// Media queries Mobile
+//? ------------------- Media queries Mobile ------------------- //
   @media screen and (min-width: 400px){
     html, body {
       font-size: 18px;
@@ -39,7 +39,7 @@
     }
 }
 
-// Media queries Tablette
+//? ------------------- Media queries Tablette ------------------- //
 @media screen and (min-width: 768px){
   html, body {
     font-size: 22px;
@@ -66,7 +66,7 @@
   }
 } 
 
-// Media queries Desktop
+//? ------------------- Media queries Desktop ------------------- //
 @media screen and (min-width: 1024px){
   html, body {
     font-size: 22px;
@@ -150,7 +150,7 @@
   }
 } 
 
-// media queries Grand ecran
+//? ------------------- Media queries Grand Ecran ------------------- //
 @media screen and (min-width: 1200px){
   html, body {
     .fonctionnement {
