@@ -13,12 +13,16 @@
 @mixin h3-style {
 	font-family: $text-font;
 	font-size: $h3-font-size;
+	text-decoration: none;
+	color: $primary-text-color;
 }
 
 @mixin p-style {
 	font-family: $text-font;
 	font-size: $p-font-size;
 	font-weight: $font-weight-thin-medium;
+	text-decoration: none;
+	color: $primary-text-color;
 }
 
 @mixin button-style {
@@ -26,16 +30,12 @@
 	text-decoration: none;
 	cursor: pointer;
 	background: $button-color;
+	color: $secondary-text-color;
+	font-family: $text-font;
+	font-size: $button-font-size;
 	box-shadow: 3px 5px 5px darken($main-bg, 15);
 	padding: 12px 16px;
 	border-radius: 50px;
-	a {
-		text-decoration: none;
-		font-family: $text-font;
-		color: $secondary-text-color;
-		font-size: $button-font-size;
-		font-weight: $font-weight-thin-large;
-	}
 }
 
 @mixin button-style-hover {
@@ -51,6 +51,7 @@
 		right: 3.5%;
 		transform: translateY(-60%);
 		cursor: pointer;
+		z-index: 5;
 	}
 	.fa-solid {
 		color: transparent;
@@ -58,10 +59,10 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		opacity: 0;
-		// &:hover {
-		// 	opacity: 1;
-		// 	transition: all 400ms ease-in-out;
-		// }
+		&:hover {
+			opacity: 1;
+			transition: all 400ms ease-in-out;
+		}
 	}
 }
 
@@ -147,4 +148,17 @@
 		opacity: 0;
     animation: slideOpacity $value1 ease-in-out $value2;
     animation-fill-mode: forwards;
+}
+
+@mixin loader-anim {
+	animation: display-loader 1s ease-in-out 4s;
+	animation-fill-mode: forwards;
+	@keyframes display-loader {
+		from { 
+			visibility: visible;
+		}
+		to {
+			visibility: hidden;
+		}
+	}
 }

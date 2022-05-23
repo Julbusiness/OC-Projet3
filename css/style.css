@@ -2,10 +2,131 @@ body, html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: 100vh;
   font-size: 16px;
 }
 
+body {
+  height: 100vh;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  animation: display-loader 1s ease-in-out 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes display-loader {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+}
+
+.ball {
+  position: absolute;
+  top: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: ball 4s infinite;
+}
+
+.ball1 {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+
+.ball2 {
+  background-image: linear-gradient(to bottom, #ff79da, #99e2d0);
+}
+
+.ball3 {
+  background-image: linear-gradient(to bottom, #99e2d0, #9356dc);
+}
+
+.ball4 {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+
+.balls1 .ball1 {
+  left: -100px;
+  animation-delay: 0;
+}
+
+.balls1 .ball2 {
+  left: -50px;
+  animation-delay: 0.05s;
+}
+
+.balls1 .ball3 {
+  left: 0px;
+  animation-delay: 0.1s;
+}
+
+.balls1 .ball4 {
+  left: 50px;
+  animation-delay: 0.15s;
+}
+
+.balls2 .ball1 {
+  left: -100px;
+  animation-delay: 2s;
+}
+
+.balls2 .ball2 {
+  left: -50px;
+  animation-delay: 2.05s;
+}
+
+.balls2 .ball3 {
+  left: 0px;
+  animation-delay: 2.1s;
+}
+
+.balls2 .ball4 {
+  left: 50px;
+  animation-delay: 2.15s;
+}
+
+@keyframes ball {
+  0%, 25% {
+    top: -15px;
+  }
+  35% {
+    top: calc(60% - 15px);
+  }
+  40% {
+    top: calc(45% - 15px);
+  }
+  45% {
+    top: calc(55% - 15px);
+  }
+  50%, 70% {
+    top: calc(50% - 7px);
+  }
+  80%, 100% {
+    top: 100%;
+  }
+}
 header {
   position: relative;
   font-family: "Shrikhand", cursive;
@@ -59,23 +180,25 @@ main .info p {
   font-family: "Roboto", sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
+  text-decoration: none;
+  color: #333;
 }
 main .info button {
   border: none;
   text-decoration: none;
   cursor: pointer;
   background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
   box-shadow: 3px 5px 5px #d0d0d0;
   padding: 12px 16px;
   border-radius: 50px;
   margin: 20px auto 40px;
 }
-main .info button a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: #f1f1f1;
-  font-size: 0.875rem;
-  font-weight: 400;
+main .info button:hover {
+  opacity: 0.8;
+  box-shadow: 3px 5px 5px #aaaaaa;
 }
 
 .fonctionnement {
@@ -120,7 +243,7 @@ main .info button a {
   height: 0.75rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
-  color: #f1f1f1;
+  color: #fff;
   text-align: center;
 }
 .fonctionnement .flex-media div a .text {
@@ -159,6 +282,7 @@ main .info button a {
   width: 100%;
   height: 220px;
   margin: 0 auto 15px;
+  cursor: pointer;
 }
 .restaurants .card a {
   text-decoration: none;
@@ -193,19 +317,27 @@ main .info button a {
 .restaurants .card .info-texte .texte {
   flex-direction: column;
   width: 80%;
-  height: 2.5rem;
 }
 .restaurants .card .info-texte .texte h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  text-decoration: none;
+  color: #333;
   margin: 0 auto;
 }
 .restaurants .card .info-texte .texte p {
   font-family: "Roboto", sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
+  text-decoration: none;
+  color: #333;
   margin: 0 auto;
   padding-top: 3px;
+}
+.restaurants .card .info-texte .texte .heart-container {
+  position: absolute;
+  top: 40%;
+  right: 4%;
 }
 
 footer {
@@ -225,7 +357,7 @@ footer .liens a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: #f1f1f1;
+  color: #fff;
   font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
   padding-left: 20px;
@@ -281,6 +413,7 @@ main {
   right: 3.5%;
   transform: translateY(-60%);
   cursor: pointer;
+  z-index: 5;
 }
 .menu-titre .heart-toggle .fa-solid {
   color: transparent;
@@ -288,6 +421,10 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+}
+.menu-titre .heart-toggle .fa-solid:hover {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
 }
 .menu-titre input[type=checkbox] {
   display: none;
@@ -299,6 +436,7 @@ main {
   right: 3.5%;
   transform: translateY(-60%);
   cursor: pointer;
+  z-index: 5;
 }
 .menu-titre input[type=checkbox]:checked + .heart-toggle .fa-solid {
   color: transparent;
@@ -306,6 +444,10 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+}
+.menu-titre input[type=checkbox]:checked + .heart-toggle .fa-solid:hover {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
 }
 .menu-titre input[type=checkbox]:checked + .heart-toggle .fa-solid {
   opacity: 1;
@@ -408,6 +550,9 @@ main {
   text-decoration: none;
   cursor: pointer;
   background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
   box-shadow: 3px 5px 5px #d0d0d0;
   padding: 12px 16px;
   border-radius: 50px;
@@ -415,13 +560,6 @@ main {
   display: block;
   justify-content: center;
   margin: 50px auto 0px;
-}
-.menu button a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: #f1f1f1;
-  font-size: 0.875rem;
-  font-weight: 400;
 }
 
 footer {
@@ -469,6 +607,64 @@ footer {
   html, body {
     font-size: 22px;
   }
+  html .loader .ball, body .loader .ball {
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  html .loader .balls1 .ball1, body .loader .balls1 .ball1 {
+    left: -110px;
+    animation-delay: 0;
+  }
+  html .loader .balls1 .ball2, body .loader .balls1 .ball2 {
+    left: -50px;
+    animation-delay: 0.05s;
+  }
+  html .loader .balls1 .ball3, body .loader .balls1 .ball3 {
+    left: 10px;
+    animation-delay: 0.1s;
+  }
+  html .loader .balls1 .ball4, body .loader .balls1 .ball4 {
+    left: 70px;
+    animation-delay: 0.15s;
+  }
+  html .loader .balls2 .ball1, body .loader .balls2 .ball1 {
+    left: -110px;
+    animation-delay: 2s;
+  }
+  html .loader .balls2 .ball2, body .loader .balls2 .ball2 {
+    left: -50px;
+    animation-delay: 2.05s;
+  }
+  html .loader .balls2 .ball3, body .loader .balls2 .ball3 {
+    left: 10px;
+    animation-delay: 2.1s;
+  }
+  html .loader .balls2 .ball4, body .loader .balls2 .ball4 {
+    left: 70px;
+    animation-delay: 2.15s;
+  }
+  @keyframes ball {
+    0%, 25% {
+      top: -30px;
+    }
+    35% {
+      top: calc(60% - 30px);
+    }
+    40% {
+      top: calc(45% - 30px);
+    }
+    45% {
+      top: calc(55% - 30px);
+    }
+    50%, 70% {
+      top: calc(50% - 10px);
+    }
+    80%, 100% {
+      top: 100%;
+    }
+  }
   html header img, body header img {
     max-width: 12.5rem;
   }
@@ -485,6 +681,81 @@ footer {
 @media screen and (min-width: 1024px) {
   html, body {
     font-size: 22px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  html .loader .ball, body .loader .ball {
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    animation: ball 4s infinite;
+  }
+  html .loader .ball1, body .loader .ball1 {
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  }
+  html .loader .ball2, body .loader .ball2 {
+    background-image: linear-gradient(to bottom, #ff79da, #99e2d0);
+  }
+  html .loader .ball3, body .loader .ball3 {
+    background-image: linear-gradient(to bottom, #99e2d0, #9356dc);
+  }
+  html .loader .ball4, body .loader .ball4 {
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  }
+  html .loader .balls1 .ball1, body .loader .balls1 .ball1 {
+    left: -180px;
+    animation-delay: 0;
+  }
+  html .loader .balls1 .ball2, body .loader .balls1 .ball2 {
+    left: -100px;
+    animation-delay: 0.05s;
+  }
+  html .loader .balls1 .ball3, body .loader .balls1 .ball3 {
+    left: -20px;
+    animation-delay: 0.1s;
+  }
+  html .loader .balls1 .ball4, body .loader .balls1 .ball4 {
+    left: 60px;
+    animation-delay: 0.15s;
+  }
+  html .loader .balls2 .ball1, body .loader .balls2 .ball1 {
+    left: -180px;
+    animation-delay: 2s;
+  }
+  html .loader .balls2 .ball2, body .loader .balls2 .ball2 {
+    left: -100px;
+    animation-delay: 2.05s;
+  }
+  html .loader .balls2 .ball3, body .loader .balls2 .ball3 {
+    left: -20px;
+    animation-delay: 2.1s;
+  }
+  html .loader .balls2 .ball4, body .loader .balls2 .ball4 {
+    left: 60px;
+    animation-delay: 2.15s;
+  }
+  @keyframes ball {
+    0%, 25% {
+      top: -50px;
+    }
+    35% {
+      top: calc(60% - 50px);
+    }
+    40% {
+      top: calc(45% - 50px);
+    }
+    45% {
+      top: calc(55% - 50px);
+    }
+    50%, 70% {
+      top: calc(50% - 25px);
+    }
+    80%, 100% {
+      top: 100%;
+    }
   }
   html header img, body header img {
     max-width: 15.625rem;
@@ -550,26 +821,6 @@ footer {
     padding-right: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
-  html .fonctionnement .flex-media, body .fonctionnement .flex-media {
-    display: flex;
-  }
-  html .fonctionnement .flex-media .choix, body .fonctionnement .flex-media .choix {
-    padding: 0 auto 20px;
-  }
-  html .fonctionnement .flex-media div, body .fonctionnement .flex-media div {
-    width: 320px;
-    height: 160px;
-  }
-  html .fonctionnement .flex-media div a .number, body .fonctionnement .flex-media div a .number {
-    top: -20%;
-  }
-  html .image-menu-cover img, body .image-menu-cover img {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-  }
-}
 .info button:hover {
   opacity: 0.8;
   box-shadow: 3px 5px 5px #aaaaaa;
@@ -587,6 +838,7 @@ footer {
   right: 3.5%;
   transform: translateY(-60%);
   cursor: pointer;
+  z-index: 5;
 }
 .restaurants .card .info-texte .heart-toggle .fa-solid {
   color: transparent;
@@ -594,6 +846,10 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+}
+.restaurants .card .info-texte .heart-toggle .fa-solid:hover {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
 }
 .restaurants .card .info-texte input[type=checkbox] {
   display: none;
@@ -605,6 +861,7 @@ footer {
   right: 3.5%;
   transform: translateY(-60%);
   cursor: pointer;
+  z-index: 5;
 }
 .restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle .fa-solid {
   color: transparent;
@@ -612,6 +869,10 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+}
+.restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle .fa-solid:hover {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
 }
 .restaurants .card .info-texte input[type=checkbox]:checked + .heart-toggle .fa-solid {
   opacity: 1;

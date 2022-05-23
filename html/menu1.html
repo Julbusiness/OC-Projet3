@@ -32,7 +32,17 @@
 
     <!-------------- image -------------->
     <div class="image-menu-cover">
-      <img src="../images/restaurants/Big/La-palette-du-gout.jpg" alt="assiette ronde petite quantité">
+      <img 
+      srcset="
+        ../images/restaurants/Small/La-palette-du-gout-small.png 500w,
+        ../images/restaurants/Medium/La-palette-du-gout-medium.png 800w,
+        ../images/restaurants/Big/La-palette-du-gout.jpg 1200w"
+      sizes="
+        (max-width: 600px) 500px,
+        (max-width: 900px) 800px,
+        1200px"
+      src="../images/restaurants/Big/La-palette-du-gout.jpg" 
+      alt="assiette ronde petite quantité">
     </div>
 
     <!-------------- titre -------------->
@@ -82,8 +92,8 @@
                 <p>35€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check2" name="choice">
+                <label for="check2" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -100,8 +110,8 @@
                 <p>20€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check3" name="choice">
+                <label for="check3" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -125,8 +135,8 @@
                 <p>40€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check4" name="choice">
+                <label for="check4" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -143,8 +153,8 @@
                 <p>35€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check5" name="choice">
+                <label for="check5" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -161,8 +171,8 @@
                 <p>44€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check6" name="choice">
+                <label for="check6" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -186,8 +196,8 @@
                 <p>18€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check7" name="choice">
+                <label for="check7" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -204,8 +214,8 @@
                 <p>22€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check8" name="choice">
+                <label for="check8" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -222,8 +232,8 @@
                 <p>23€</p>
               </div>
               <div class="form-check">
-                <input type="checkbox" id="check1" name="choice">
-                <label for="check1" class="check-label">
+                <input type="checkbox" id="check9" name="choice">
+                <label for="check9" class="check-label">
                   <i class="fa-solid fa-circle-check"></i>
                 </label>
               </div>
@@ -233,10 +243,9 @@
         </div>
 
         <!-------------- bouton -------------->
-
-        <button>
-          <a href="#">Commander</a>
-        </button>
+        <form>
+          <button type="submit" formaction="#">Commander</button>
+        </form>
       </div>
     </div>
   </main>

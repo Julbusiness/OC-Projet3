@@ -43,6 +43,9 @@ main {
 		button {
 			@include button-style;
 			margin: 20px auto 40px;
+			&:hover {
+				@include button-style-hover;
+			}
 		}
 	}
 }
