@@ -1,6 +1,35 @@
 //? Animation loader
 
+.loader {
+	animation: loader-anim 1s ease-in-out 2s;
+	animation-fill-mode: forwards;
+}
 
+@keyframes loader-anim {
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+
+body {
+	animation: loader-body 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes loader-body {
+	0% {
+		overflow: hidden;
+	}
+	99% {
+		overflow: hidden;
+	}
+	100% {
+		overflow: visible;
+	}
+}
 
 //? Animation bouton (couleur plus clair au hover)
 

@@ -35,6 +35,9 @@ body {
     max-width: 900px;
     margin: 0 auto;
   }
+  body .lettre {
+    font-size: 40px;
+  }
   body header img {
     max-width: 12.5rem;
   }
@@ -116,6 +119,35 @@ body {
   main .container .menu-coeur {
     text-align: right;
     padding-right: 50px;
+  }
+}
+.loader {
+  animation: loader-anim 1s ease-in-out 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-anim {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+body {
+  animation: loader-body 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-body {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
   }
 }
 .info button:hover {
@@ -232,8 +264,9 @@ body {
 }
 
 .lettre {
-  color: #484848;
+  color: #ff79da;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;

@@ -1,3 +1,7 @@
+body {
+  // overflow: hidden;
+}
+
 .loader {
   position: absolute;
   z-index: 9999;
@@ -9,8 +13,9 @@
   align-items: center;
 }
 .lettre {
-  color: #484848;
+  color: #ff79da;
   font-size: 20px;
+  font-family: $text-font;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
