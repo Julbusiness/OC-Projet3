@@ -1,18 +1,24 @@
-body, html {
+html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-size: 16px;
-}
-
-body {
-	height: 100vh;
+	height: 100%;
 }
 
 
 @import "./base/functions";
 @import "./base/variables";
 @import "./base/mixins";
+@import "./base/responsive";
+@import "./base/animations";
 @import "./accueil/loader";
 @import "./accueil/header";
 @import "./accueil/section-intro";
@@ -22,6 +28,4 @@ body {
 @import "./menus/menu-header";
 @import "./menus/menu-main";
 @import "./menus/menu-footer";
-@import "./base/responsive";
-@import "./base/animations";
 

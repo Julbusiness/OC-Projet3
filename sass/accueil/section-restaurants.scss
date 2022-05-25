@@ -1,15 +1,17 @@
 .restaurants {
-	padding: 20px 20px 30px;
+	padding: 20px 0 30px;
 	display: flex;
 	flex-direction: column;
 	background: $main-bg;
+	margin: auto;
 
 	h2 {
 		@include h2-style;
-		padding-top: 10px;
+		padding: 10px 20px 0;
 	}
 
 	.flex-card {
+		padding: 20px;
 		.card {
 
 			&:nth-child(2) .image img {

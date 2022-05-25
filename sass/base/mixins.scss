@@ -48,7 +48,7 @@
 		font-size: rem-calc(20);
 		position: absolute;
 		top: 50%;
-		right: 3.5%;
+		right: 4%;
 		transform: translateY(-60%);
 		cursor: pointer;
 		z-index: 5;
@@ -92,18 +92,18 @@
 @mixin hover-check {
 	&:hover {
 		.text-menu {
-			width: 65%;
+			width: 70%;
 		}
 		.tarifs p {
-			transform: translateX(rem-calc(-60));
+			transform: translateX(rem-calc(-50));
 			transition: transform 500ms ease-in-out;
 		}
 		.form-check {
-			width: rem-calc(55);
-			transform: translateX(rem-calc(-60));
+			width: rem-calc(50);
+			transform: translateX(rem-calc(-50));
 			transition: transform 500ms ease-in-out;
 		}
-
+		
 		i {
 			transform: rotate(360deg);
 			transition: transform 600ms ease-in-out;
@@ -111,24 +111,6 @@
 	}
 }
 
-@mixin hover-check-400 {
-	&:hover {
-		.tarifs p {
-			transform: translateX(rem-calc(-60));
-			transition: transform 500ms ease-in-out;
-		}
-		.form-check {
-			top: 0;
-			right: rem-calc(-60);
-			width: rem-calc(70);
-			transform: translateX(rem-calc(-60));
-			transition: transform 500ms ease-in-out;
-		}
-		.check-label {
-			width: rem-calc(70);
-		}
-	}
-}
 
 @mixin slideOpacity-keyframes{
 	@keyframes slideOpacity {
@@ -148,17 +130,4 @@
 		opacity: 0;
     animation: slideOpacity $value1 ease-in-out $value2;
     animation-fill-mode: forwards;
-}
-
-@mixin loader-anim {
-	animation: display-loader 1s ease-in-out 4s;
-	animation-fill-mode: forwards;
-	@keyframes display-loader {
-		from { 
-			visibility: visible;
-		}
-		to {
-			visibility: hidden;
-		}
-	}
 }

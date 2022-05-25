@@ -11,7 +11,7 @@ main {
 .container {
   width: $full-width;
   background: $main-bg;
-  border-radius: 25px 25px 0 0;
+  border-radius: 40px 40px 0 0;
   padding: 25px 0px 0;
   position: relative;
   top: -50px;
@@ -38,8 +38,9 @@ main {
     font-size: $menu-h3-font-size;
     font-weight: 300;
     border-bottom: 3px solid $tertiary-color;
-    width: rem-calc(40);
+    width: rem-calc(35);
     margin-block-start: rem-calc(40);
+    padding: 5px 0;
   }
 
   .choix {
@@ -53,7 +54,7 @@ main {
       position: relative;
       display: flex;
       width: $full-width;
-      height: rem-calc(65);
+      height: rem-calc(60);
       cursor: pointer;
       overflow: hidden;
       
@@ -79,44 +80,43 @@ main {
       }
       
       .tarifs {
-        width: 40%;
+        width: 35%;
         display: flex;
         justify-content: flex-end;
         align-items: end;
-        padding: 0 rem-calc(10);
+        // margin-right: 10px;
 
         p {
           margin: 0;
           font-family: $text-font;
           font-size: $menu-details-size;
           font-weight: $font-weight-normal;
-          padding: 10px;
+          padding: 13px;
         }
       }
       
       .form-check {
         position: absolute;
         top: 0;
-        right: rem-calc(-55);
-        width: rem-calc(55);
-        height: rem-calc(65);
+        right: rem-calc(-50);
+        width: rem-calc(50);
+        height: rem-calc(60);
         border-radius: 0 15px 15px 0;
 
         
         .check-label {
           display: block;
           border-radius: 0 15px 15px 0;
-          width: rem-calc(60);
-          height: rem-calc(65);
+          width: rem-calc(50);
+          height: rem-calc(60);
           background: $tertiary-color;
           
           i {
-            font-size: rem-calc(20);
+            font-size: rem-calc(18);
             color: $card-bg;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 36%;
+            left: 33%;
           }
           
         }
