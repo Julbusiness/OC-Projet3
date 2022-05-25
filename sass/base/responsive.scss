@@ -43,6 +43,8 @@
 @media screen and (min-width: 768px){
   html, body {
     font-size: 22px;
+    max-width: 900px;
+    margin: 0 auto;
     .loader {
       .ball {
         top: -30px;
@@ -51,7 +53,7 @@
         margin: 0 10px;
       }
 
-      .balls1 .ball1{ left: -110px;  animation-delay: 0; }
+      .balls1 .ball1{ left: -110px}
       .balls1 .ball2{ left: -50px;  animation-delay: .05s; }
       .balls1 .ball3{ left: 10px;  animation-delay: .1s; }
       .balls1 .ball4{ left: 70px;  animation-delay: .15s; }
@@ -117,7 +119,7 @@
       .ball3{ background-image: linear-gradient(to bottom , #99e2d0, #9356dc);}
       .ball4{ background-image: linear-gradient(to bottom , #ff79da, #9356dc);}
       
-      .balls1 .ball1{ left: -180px;  animation-delay: 0; }
+      .balls1 .ball1{ left: -180px}
       .balls1 .ball2{ left: -100px;  animation-delay: .05s; }
       .balls1 .ball3{ left: -20px;  animation-delay: .1s; }
       .balls1 .ball4{ left: 60px;  animation-delay: .15s; }

@@ -69,7 +69,6 @@ body {
 
 .balls1 .ball1 {
   left: -100px;
-  animation-delay: 0;
 }
 
 .balls1 .ball2 {
@@ -538,9 +537,9 @@ main {
   font-size: 1.25rem;
   color: #fff;
   position: absolute;
-  top: 36%;
-  left: 36%;
-  transform: translate -50%, -50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .menu .choix .details-prix .form-check input[type=checkbox] {
   display: none;
@@ -606,6 +605,8 @@ footer {
 @media screen and (min-width: 768px) {
   html, body {
     font-size: 22px;
+    max-width: 900px;
+    margin: 0 auto;
   }
   html .loader .ball, body .loader .ball {
     top: -30px;
@@ -615,7 +616,6 @@ footer {
   }
   html .loader .balls1 .ball1, body .loader .balls1 .ball1 {
     left: -110px;
-    animation-delay: 0;
   }
   html .loader .balls1 .ball2, body .loader .balls1 .ball2 {
     left: -50px;
@@ -707,7 +707,6 @@ footer {
   }
   html .loader .balls1 .ball1, body .loader .balls1 .ball1 {
     left: -180px;
-    animation-delay: 0;
   }
   html .loader .balls1 .ball2, body .loader .balls1 .ball2 {
     left: -100px;
