@@ -111,6 +111,25 @@
 	}
 }
 
+@mixin hover-check-1024 {
+	&:hover {
+		.tarifs p {
+			transform: translateY(rem-calc(-50));
+			transition: transform 500ms ease-in-out;
+		}
+		.form-check {
+			width: 100%;
+			transform: translateY(rem-calc(-50));
+			transition: transform 500ms ease-in-out;
+		}
+		
+		i {
+			transform: rotate(360deg);
+			transition: transform 600ms ease-in-out;
+		}
+	}
+}
+
 
 @mixin slideOpacity-keyframes{
 	@keyframes slideOpacity {

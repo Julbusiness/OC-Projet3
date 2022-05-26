@@ -1,153 +1,161 @@
-@media screen and (min-width: 400px){
-
-  body {
-    .restaurants {
-      .card {
-        height: rem-calc(250);
-      }
-      .card .image {
-        img {
-          height: rem-calc(190);
-        }
-      }
-    }
-  }
+@media screen and (min-width: 400px) {
+	body {
+		.restaurants {
+			.card {
+				height: rem-calc(250);
+			}
+			.card .image {
+				img {
+					height: rem-calc(190);
+				}
+			}
+		}
+	}
 }
 
-@media screen and (min-width: 600px){
-
-  body {
-    .restaurants {
-      .card {
-        height: rem-calc(300);
-      }
-      .card .image {
-        img {
-          height: rem-calc(240);
-        }
-      }
-    }
-  }
+@media screen and (min-width: 600px) {
+	body {
+		.restaurants {
+			.card {
+				height: rem-calc(300);
+			}
+			.card .image {
+				img {
+					height: rem-calc(240);
+				}
+			}
+		}
+	}
 }
 
 //? ------------------- Media queries Tablette ------------------- //
-@media screen and (min-width: 768px){
-  body {
-    font-size: 22px;
-    max-width: 900px;
-    margin: 0 auto;
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 22px;
+		main {
+			max-width: 900px;
+			margin: auto;
+		}
 
-      .lettre {
-        font-size: 40px;
-      }
-  
+		.lettre {
+			font-size: 40px;
+		}
 
-    header {
-      img {
-        max-width: rem-calc(200);
-      }
-    }
-    footer {
-      img {
-        max-width: rem-calc(150);
-      }
-    }
-      .restaurants {
-        .card {
-          height: rem-calc(350);
-        }
-        .card .image {
-          img {
-            height: rem-calc(290);
-          }
-        }
-      }
-  }
-} 
+		header {
+			max-width: 900px;
+			margin: auto;
+			img {
+				max-width: rem-calc(200);
+			}
+		}
+		footer {
+			max-width: 900px;
+			margin: auto;
+			img {
+				max-width: rem-calc(150);
+			}
+		}
+		.restaurants {
+			.card {
+				height: rem-calc(350);
+			}
+			.card .image {
+				img {
+					height: rem-calc(290);
+				}
+			}
+		}
+	}
+}
 
 //? ------------------- Media queries Desktop ------------------- //
-@media screen and (min-width: 1024px){
-  body {
-    font-size: 22px;
-    max-width: 1200px;
-    margin: auto;
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 22px;
 
-    header {
-      img {
-        max-width: rem-calc(250);
-      }
-    }
-    footer {
-      flex-direction: row;
-      align-items: center;
-      height: 50px;
-      justify-content: space-between;
-      .footer-logo {
-        img {
-          display: flex;
-          width: 100%;
-          max-width: rem-calc(120);
-          align-items: center;
-          padding: 0 0px 0 50px;
-        }
-      }
-      .liens {
-        display: flex;
-        padding-right: 50px;
-        a {
-          font-size: rem-calc(14);
-        }
-      }
-    }
+		main {
+			max-width: 1200px;
+			margin: auto;
+		}
 
-    .fonctionnement {
-      .flex-media {
-        display: flex;
-        div {
-          width: 250px;
-          height: 100px;
-          align-items: center;
-          justify-content: center;
-          padding: rem-calc(10);
-          margin: rem-calc(20) auto;
-        }
-        div a .number {
-          top: -30%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: rem-calc(20);
-          height: rem-calc(20);
-          font-size: rem-calc(18);
-          font-weight: $font-weight-thin-large;
-        }
-        div a .text {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-        }
-      }
-    }
+		header {
+			max-width: 1200px;
+			margin: auto;
+			img {
+				max-width: rem-calc(250);
+			}
+		}
+		footer {
+			max-width: 1200px;
+			margin: auto;
+			flex-direction: row;
+			align-items: center;
+			height: 50px;
+			justify-content: space-between;
+			.footer-logo {
+				img {
+					display: flex;
+					width: 100%;
+					max-width: rem-calc(120);
+					align-items: center;
+					padding: 0 0px 0 50px;
+				}
+			}
+			.liens {
+				display: flex;
+				padding-right: 50px;
+				a {
+					font-size: rem-calc(14);
+				}
+			}
+		}
 
-    .restaurants {
-      .flex-card {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .card {
-          width: 45%;
-          margin-bottom: 50px;
-        }
-      }
-    }
-  }
+		.fonctionnement {
+			.flex-media {
+				display: flex;
+				div {
+					width: 250px;
+					height: 100px;
+					align-items: center;
+					justify-content: center;
+					padding: rem-calc(10);
+					margin: rem-calc(20) auto;
+				}
+				div a .number {
+					top: -30%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: rem-calc(20);
+					height: rem-calc(20);
+					font-size: rem-calc(18);
+					font-weight: $font-weight-thin-large;
+				}
+				div a .text {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+				}
+			}
+		}
 
-  main {
-    .container{
-      .menu-coeur {
-        text-align: right;
-        padding-right: 50px;
-      }
-    }
-  }
-} 
+		.restaurants {
+			.flex-card {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				.card {
+					width: 45%;
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+
+	.container {
+		.menu-coeur {
+			text-align: right;
+			padding-right: 50px;
+		}
+	}
+}

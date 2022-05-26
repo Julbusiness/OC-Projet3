@@ -14,22 +14,22 @@
 	}
 }
 
-body {
-	animation: loader-body 3s ease-in-out;
-	animation-fill-mode: forwards;
-}
+// body {
+// 	animation: loader-body 3s ease-in-out;
+// 	animation-fill-mode: forwards;
+// }
 
-@keyframes loader-body {
-	0% {
-		overflow: hidden;
-	}
-	99% {
-		overflow: hidden;
-	}
-	100% {
-		overflow: visible;
-	}
-}
+// @keyframes loader-body {
+// 	0% {
+// 		overflow: hidden;
+// 	}
+// 	99% {
+// 		overflow: hidden;
+// 	}
+// 	100% {
+// 		overflow: visible;
+// 	}
+// }
 
 //? Animation bouton (couleur plus clair au hover)
 
