@@ -32,7 +32,7 @@
 	}
 }
 
-//? Animation click coeur-favoris (couleur plus clair au hover)
+//? Animation click coeur-favoris
 
 .restaurants {
 	.card {
@@ -42,7 +42,7 @@
 	}
 }
 
-//? Animation au chargement des menus (Propositions 1)
+//? Animation au chargement des menus
 
 .menu {
 	.entrees {
@@ -57,7 +57,7 @@
 	@include slideOpacity-keyframes;
 }
 
-//? Animation pages de menu (Ajouter des plats au click et utiliser les 3 petits points)
+//? Animation pages de menu (Ajouter des plats)
 
 .menu {
 	.choix {

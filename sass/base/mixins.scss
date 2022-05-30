@@ -111,25 +111,11 @@
 	}
 }
 
-@mixin hover-check-1024 {
-	&:hover {
-		.tarifs p {
-			transform: translateY(rem-calc(-50));
-			transition: transform 500ms ease-in-out;
-		}
-		.form-check {
-			width: 100%;
-			transform: translateY(rem-calc(-50));
-			transition: transform 500ms ease-in-out;
-		}
-		
-		i {
-			transform: rotate(360deg);
-			transition: transform 600ms ease-in-out;
-		}
-	}
+@mixin slideOpacity-animation($value1, $value2) {
+		opacity: 0;
+		animation: slideOpacity $value1 ease-in-out $value2;
+		animation-fill-mode: forwards;
 }
-
 
 @mixin slideOpacity-keyframes{
 	@keyframes slideOpacity {
@@ -143,10 +129,4 @@
       opacity: 1;
     }
   }
-}
-
-@mixin slideOpacity-animation($value1, $value2) {
-		opacity: 0;
-    animation: slideOpacity $value1 ease-in-out $value2;
-    animation-fill-mode: forwards;
 }
